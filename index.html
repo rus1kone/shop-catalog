@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/css/flag-icon.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Shop - Search</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="search">
+        <input class="search__input" type="text" placeholder="" />
+        <button class="search__button">Пошук</button>
+      </div>
+
+      <div class="filter">
+        <div class="filter__price">
+          <span class="filter__price-value">Мін:</span>
+          <input
+            id="price-range"
+            class="filter__price-range"
+            type="range"
+            min="10"
+            max="200"
+            step="1"
+            value="10"
+          />
+          <label class="filter__price-label" for="price-range">Min:</label>
+        </div>
+
+        <div class="filter__size">
+          <label class="filter__size-label">Розмір:</label>
+          <select class="filter__size-select">
+            <option value="">Всі розміри</option>
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="product container">
+      <div id="product-container" class="product-container"></div>
+      <div id="pagination" class="pagination"></div>
+    </div>
+
+    <button id="theme-toggle" class="theme-toggle">
+      <span class="toggle-slider"></span>
+    </button>
+
+    <div class="language">
+      <a href="index-en.html"><i class="flag-icon flag-icon-gb"></i></a>
+      <a href="index.html"><i class="flag-icon flag-icon-ua"></i></a>
+    </div>
+
+    
+    <script src="js/main.js"></script>
+    <script src="js/theme.js"></script>
+  </body>
+</html>
